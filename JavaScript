@@ -1,0 +1,60 @@
+// Simple Add to Cart Function
+function addToCart(button) {
+  button.textContent = "Added!";
+  button.disabled = true;
+  alert("Product added to cart!");
+}
+
+// Contact Form Validation
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector("form");
+  
+  if (form) {
+    form.addEventListener("submit", (e) => {
+      e.preventDefault(); // Stop default form submit
+      const inputs = form.querySelectorAll("input, textarea");
+      let valid = true;
+
+      inputs.forEach(input => {
+        if (!input.value.trim()) {
+          valid = false;
+          input.style.border = "2px solid red";
+        } else {
+          input.style.border = "1px solid #ccc";
+        }
+      });
+
+      if (valid) {
+        alert("Form submitted successfully!");
+        form.reset(); // Clear form
+      } else {
+        alert("Please fill out all fields!");
+      }
+    });
+  }
+});
+
+// Dynamic Greeting (just an extra feature for fun)
+function showGreeting() {
+  const hours = new Date().getHours();
+  let message = "";
+
+  if (hours < 12) {
+    message = "Good Morning, Visitor!";
+  } else if (hours < 18) {
+    message = "Good Afternoon, Visitor!";
+  } else {
+    message = "Good Evening, Visitor!";
+  }
+
+  const hero = document.querySelector(".hero");
+  if (hero) {
+    const greet = document.createElement("p");
+    greet.textContent = message;
+    greet.style.fontWeight = "bold";
+    hero.appendChild(greet);
+  }
+}
+
+// Run greeting on load
+showGreeting();
