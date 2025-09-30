@@ -1,138 +1,73 @@
-<section class="products">
-  <h2>Local Products</h2>
-  <div class="product-grid">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ilocos Sur Tourism</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <!-- Header & Navbar -->
+  <header>
+    <h1>Ilocos Sur Wonders</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home (Ilocos Sur)</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Product 1 -->
-    <div class="product-card">
-      <img src="assets/okoy-vigan.jpg" alt="Okoy from Vigan City" class="product-photo">
-      <div class="product-info">
-        <h3>Okoy (Vigan City)</h3>
-        <p>Crispy shrimp fritters, usually dipped in spiced vinegar.</p>
-        <p><strong>Price:</strong> ₱50 per serving</p>
-        <button class="add-to-cart">Add to Cart</button>
-      </div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Discover the Beauty of Ilocos Sur</h2>
+    <p>Explore tourist spots and local products</p>
+  </section>
+
+  <!-- Section 1: Tourist Spots -->
+  <section>
+    <h2>Tourist Spots & Adventures</h2>
+
+    <div class="spot">
+      <img src="assets/images/spot1.jpg" alt="Spot 1">
+      <h3>Vigan Heritage Village</h3>
+      <p>A UNESCO World Heritage site showcasing Spanish colonial architecture.</p>
+      <p>#Vigan #Heritage #IlocosSur #UNESCO #History</p>
     </div>
 
-    <!-- Product 2 -->
-    <div class="product-card">
-      <img src="assets/longganisa-vigan.jpg" alt="Vigan Longganisa" class="product-photo">
-      <div class="product-info">
+    <div class="spot">
+      <img src="assets/images/spot2.jpg" alt="Spot 2">
+      <h3>Baluarte Zoo</h3>
+      <p>A fun zoo adventure featuring exotic and local animals.</p>
+      <p>#BaluarteZoo #FamilyTrip #IlocosSur #Nature #Adventure</p>
+    </div>
+
+    <div class="spot">
+      <img src="assets/images/spot3.jpg" alt="Spot 3">
+      <h3>Caoayan Beach</h3>
+      <p>Enjoy the serene sunset views along the coastline.</p>
+      <p>#CaoayanBeach #Sunset #Relax #Travel #IlocosSur</p>
+    </div>
+  </section>
+
+  <!-- Section 2: Local Products -->
+  <section>
+    <h2>Local Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="assets/images/product1.jpg" alt="Product 1">
         <h3>Vigan Longganisa</h3>
-        <p>Famous garlicky native sausage, distinct for its strong flavor.</p>
-        <p><strong>Price:</strong> ₱120 per pack</p>
-        <button class="add-to-cart">Add to Cart</button>
+        <p>₱120 / pack</p>
+        <button onclick="addToCart(this)">Add to Cart</button>
       </div>
+      <!-- Repeat for 12 products -->
     </div>
+  </section>
 
-    <!-- Product 3 -->
-    <div class="product-card">
-      <img src="assets/bagnet.jpg" alt="Bagnet" class="product-photo">
-      <div class="product-info">
-        <h3>Bagnet (Ilocos Norte)</h3>
-        <p>Deep-fried crispy pork belly, crunchy outside and tender inside.</p>
-        <p><strong>Price:</strong> ₱350 per kilo</p>
-        <button class="add-to-cart">Add to Cart</button>
-      </div>
-    </div>
-
-    <!-- Product 4 -->
-    <div class="product-card">
-      <img src="assets/empanada-vigan.jpg" alt="Vigan Empanada" class="product-photo">
-      <div class="product-info">
-        <h3>Empanada (Vigan)</h3>
-        <p>Crunchy orange shell stuffed with egg, papaya, and longganisa.</p>
-        <p><strong>Price:</strong> ₱60 each</p>
-        <button class="add-to-cart">Add to Cart</button>
-      </div>
-    </div>
-
-    <!-- Product 5 -->
-    <div class="product-card">
-      <img src="assets/chichacorn.jpg" alt="Chichacorn" class="product-photo">
-      <div class="product-info">
-        <h3>Chichacorn (Ilocos)</h3>
-        <p>Crunchy corn snack, flavored and toasted — a perfect pasalubong.</p>
-        <p><strong>Price:</strong> ₱100 per pack</p>
-        <button class="add-to-cart">Add to Cart</button>
-      </div>
-    </div>
-
-    <!-- Product 6 -->
-    <div class="product-card">
-      <img src="assets/tinubong.jpg" alt="Tinubong" class="product-photo">
-      <div class="product-info">
-        <h3>Tinubong (Ilocos Norte)</h3>
-        <p>Sweet sticky rice cake cooked inside a bamboo tube.</p>
-        <p><strong>Price:</strong> ₱80 each</p>
-        <button class="add-to-cart">Add to Cart</button>
-      </div>
-    </div>
-
-    <!-- Product 7 -->
-    <div class="product-card">
-      <img src="assets/royal-bibingka.jpg" alt="Royal Bibingka" class="product-photo">
-      <div class="product-info">
-        <h3>Royal Bibingka (Ilocos Sur)</h3>
-        <p>Sticky rice cake topped with cheese, caramelized sugar, and butter.</p>
-        <p><strong>Price:</strong> ₱150 per box</p>
-        <button class="add-to-cart">Add to Cart</button>
-      </div>
-    </div>
-
-    <!-- Product 8 -->
-    <div class="product-card">
-      <img src="assets/inabel.jpg" alt="Inabel Fabric" class="product-photo">
-      <div class="product-info">
-        <h3>Inabel (Handwoven Fabric)</h3>
-        <p>Traditional handwoven textile, known for durability and design.</p>
-        <p><strong>Price:</strong> ₱500 per piece</p>
-        <button class="add-to-cart">Add to Cart</button>
-      </div>
-    </div>
-
-    <!-- Product 9 -->
-    <div class="product-card">
-      <img src="assets/basi-wine.jpg" alt="Basi Wine" class="product-photo">
-      <div class="product-info">
-        <h3>Basi Wine (Ilocos Norte)</h3>
-        <p>Locally brewed sugarcane wine, a heritage product of Ilocos.</p>
-        <p><strong>Price:</strong> ₱250 per bottle</p>
-        <button class="add-to-cart">Add to Cart</button>
-      </div>
-    </div>
-
-    <!-- Product 10 -->
-    <div class="product-card">
-      <img src="assets/sukang-iloko.jpg" alt="Sukang Iloko" class="product-photo">
-      <div class="product-info">
-        <h3>Sukang Iloko (Vinegar)</h3>
-        <p>Dark vinegar made from sugarcane, perfect for dipping and cooking.</p>
-        <p><strong>Price:</strong> ₱80 per bottle</p>
-        <button class="add-to-cart">Add to Cart</button>
-      </div>
-    </div>
-
-    <!-- Product 11 -->
-    <div class="product-card">
-      <img src="assets/dragonfruit-jam.jpg" alt="Dragon Fruit Jam" class="product-photo">
-      <div class="product-info">
-        <h3>Dragon Fruit Jam (Ilocos)</h3>
-        <p>Sweet and nutritious jam made from fresh dragon fruit.</p>
-        <p><strong>Price:</strong> ₱150 per jar</p>
-        <button class="add-to-cart">Add to Cart</button>
-      </div>
-    </div>
-
-    <!-- Product 12 -->
-    <div class="product-card">
-      <img src="assets/cornick.jpg" alt="Cornick Garlic" class="product-photo">
-      <div class="product-info">
-        <h3>Cornick (Garlic Fried Corn)</h3>
-        <p>Crunchy corn kernels, flavored with garlic and spices.</p>
-        <p><strong>Price:</strong> ₱50 per pack</p>
-        <button class="add-to-cart">Add to Cart</button>
-      </div>
-    </div>
-
-  </div>
-</section>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Ilocos Sur Tourism | Designed for Midterm Exam</p>
+  </footer>
+</body>
+</html>
