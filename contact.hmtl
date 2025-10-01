@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Ilocos Sur</title>
+  <link rel="stylesheet" href="css/style(1).css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <!-- Header & Navbar -->
+  <header>
+    <h1>Ilocos Sur Wonders</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home (Ilocos Sur)</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section with LAND.jpg background -->
+  <section class="hero">
+    <h2>Get in Touch</h2>
+    <p>We’d love to hear from you</p>
+  </section>
+
+  <!-- Contact Form -->
+  <section>
+    <h2>Contact Form</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <label for="title">Title:</label>
+      <input type="text" id="title" placeholder="Enter subject" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Map & Info -->
+  <section>
+    <h2>Visit Us</h2>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3863.079139488717!2d120.3885!3d17.5747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x338e6d880e7f9a0f%3A0x1c01a6a41f7a5c47!2sVigan%20City%2C%20Ilocos%20Sur!5e0!3m2!1sen!2sph!4v1700000000000"
+      width="100%" height="300" allowfullscreen="" loading="lazy">
+    </iframe>
+    <p><strong>Address:</strong> Vigan City, Ilocos Sur, Philippines</p>
+    <p><strong>Email:</strong> info@ilocossur.com | <strong>Phone:</strong> +63 912 345 6789</p>
+  </section>
+
+  <!-- Aside: Personal Info -->
+  <aside>
+    <img src="assets/images/yourphoto.jpg" alt="Your Photo">
+    <h3>April Dianne Garnace</h3>
+    <p>BSCS Student, IPSC</p>
+    <p><strong>Email:</strong> aprildianne@gmail.com</p>
+    <p><strong>Phone:</strong> +63 987 654 3210</p>
+  </aside>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Ilocos Sur Tourism | Designed for Midterm Exam</p>
+  </footer>
+</body>
+</html>
